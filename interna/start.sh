@@ -3,7 +3,7 @@
 #
 # Auto-Skript-Sammlung "Gluon2Futro ueber USB"
 #
-# Die Skripte sind auf die Hardware eines
+# Diese Skripte sind auf die Hardware eines
 # Fujitsu Siemens Futro S550 abgestimmt.
 #
 # Mit andere Hardware koennen,
@@ -23,6 +23,10 @@ Sirene () {
   done
 }
 
+# Machmal ist der Init-Prozess noch nicht rum!
+# Daher einfach mal etwas warten...
+sleep 2s
+
 echo
 echo
 echo "################################################################################"
@@ -32,10 +36,6 @@ echo "#                                                                         
 echo "################################################################################"
 echo
 echo
-
-# Manchmal ist der Init-Prozess noch nicht rum! 
-# Daher einfach mal 1 Sekunde warten
-sleep 1s
 
 mount /dev/sdb1
 if [ $? != "0" ]; then

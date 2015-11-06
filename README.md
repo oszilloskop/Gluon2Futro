@@ -31,7 +31,7 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 
 6) Den Futro S550 einschalten.
 
-7) Warten (je nach CF-Speed ca. 20-60 Sekunden) bis es 5 x piept.
+7) Warten (je nach CF-Speed ca. 10-60 Sekunden) bis es 5 x piept.
 (piep,piep,piep - piep,piep)
 
 8) Der Futro S550 schaltet sich automatisch aus.
