@@ -27,7 +27,7 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 
 4) Den USB-Stick von dem PC trennen.
 
-5) Den USB-Stick in einen ausgeschalteten Futro S550 stecken.
+5) Den USB-Stick hinten in einen ausgeschalteten Futro S550 stecken.
 
 6) Den Futro S550 einschalten.
 
