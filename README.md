@@ -7,7 +7,7 @@ Einfach ein beliebiges Gluon-x86-Image auf den vorbereiteten USB-Stick kopieren.
 ---
 # ACHTUNG:
 ### Mit dem vorbereiteten USB-Stick auf keinen Fall einen PC booten!
-### Falls das Setup des PCs identisch zu einem Futro S550 ist, so werden alle Daten auf /dev/sda bzw. C:\ gelöscht!
+### Falls das Setup des PCs identisch zu dem eines Futro S550 ist, so werden alle Daten auf /dev/sda bzw. C:\ gelöscht!
 ---
 
 ### Vorbereitung
