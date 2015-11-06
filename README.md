@@ -59,7 +59,38 @@ Dann piept der Futro wie wild -> nochmal versuchen!
 ### Verwendetes USB-Boot-Linux: Tiny/MicroCore 
 siehe http://tinycorelinux.net/
 
+---
+<br>
+<br>
+---
+## Bedienung ohne Monitor aber mit angeschlossener Tastatur
+Alle Kommandos sollte nacheinander eingegeben werden!
 
+#### "halt on errors" ausschalten, damit der Futro S550 auch ohne Tastatur bootet:
+Den Futro S550 starten und immer wieder F2 drücken bis er piept!
+- 3x runter
+- enter
+- enter
+- hoch
+- enter
+- esc
 
+#### "in case of power failure" auf "always on" stellen. Der Futro S550 startet dann sobald er Strom hat.
 
+- 3x rechts
+- 3x runter
+- enter
+- hoch
+- enter
 
+#### Speichern und beenden
+
+- F10
+- enter
+
+#### Booten von USB Stick
+
+ganz oft F12 drücken (ruhig nen paar Sekunden um sicher zu sein, dass der boot screen durch ist)
+
+- 2x runter
+- enter
