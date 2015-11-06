@@ -11,7 +11,7 @@ Einfach ein beliebiges Gluon-x86-Image auf den vorbereiteten USB-Stick kopieren.
 ---
 
 ### Vorbereitung
-Das USB-Stick-Image [gluon2futro.img]() von GitHub herunterladen und auf einen USB-Stick übertragen. (Der USB-Stick sollte mind. 64 MB groß sein.)
+Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (Der USB-Stick sollte mind. 64 MB groß sein.)
 ##### Übertragen des USB-Images auf einen USB-Stick
 - Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
 - mit Linux/OS X -> 'dd if=gluon2futro.img of=/dev/DeinUsbDevice bs=1m' (z.B. /dev/sdb (ohne 1,2,3 etc.))
