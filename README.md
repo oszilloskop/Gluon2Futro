@@ -2,11 +2,11 @@
 Mit einem präparierten USB-Stick kann ein beliebiges Gluon-x86-Image auf die interne CF-Karte eines Futro S550 übertragen werden.
 Der Vorgang ist voll automatisiert. Es wird kein Monitor und keine Tastatur benötigt.
 
-Einfach ein beliebiges Gluon-x86-Image auf den vorbereiteten USB-Stick kopieren. Wird dann der Futro S550 mit diesem vorbereitetem USB-Stick gebootet, so wird das Gluon-x86-Image von dem vorbereitetem USB-Stick auf die interne CF-Karte des Futros übertragen.
+Einfach ein beliebiges Gluon-x86-Image auf den vorbereiteten USB-Stick kopieren. Wird dann der Futro S550 mit diesem vorbereiteten USB-Stick gebootet, so wird das Gluon-x86-Image von dem vorbereiteten USB-Stick auf die interne CF-Karte des Futros übertragen.
 
 ---
 # ACHTUNG:
-### Mit dem vorbereitetem USB-Stick auf keinen Fall einen PC booten!
+### Mit dem vorbereiteten USB-Stick auf keinen Fall einen PC booten!
 ### Falls das Setup des PCs identisch zu einem Futro S550 ist, so werden alle Daten auf /dev/sda bzw. C:\ gelöscht!
 ---
 
@@ -48,7 +48,7 @@ die Konfigurationsseite des Futro S550 zugegriffen werden.
 Kommt es zu einem Fehler, so fängt der Futro für ca. 10 Sekunden wie wild an
 zu piepsen. Hiernach schaltet er sich automatisch aus.
 Auf einem, an dem Futro angeschlossenen Monitor, wird die Fehlerursache angezeigt.
-(Evtl. könnte man das Skript 'bitte_nicht_loeschen.sh' auf dem vorbereitetem USB-Stick auch noch so anpassen, dass die Fehlerursache in einer Datei auf dem USB-Stick abgelegt wird.)
+(Evtl. könnte man das Skript 'bitte_nicht_loeschen.sh' auf dem vorbereiteten USB-Stick auch noch so anpassen, dass die Fehlerursache in einer Datei auf dem USB-Stick abgelegt wird.)
 
 ### Info:
 Aus unbekannten Gründen scheitert das korrekte Mounten des USB-Sticks bei einem von zehn Versuchen :o(
