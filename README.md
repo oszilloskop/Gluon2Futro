@@ -11,7 +11,7 @@ Einfach ein beliebiges Gluon-x86-Image auf den vorbereiteten USB-Stick kopieren.
 ---
 
 ### Vorbereitung
-Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (Der USB-Stick sollte mind. 64 MB groß sein. Alle bisherigen Daten auf dem USB-Stick gehen verloren!)
+Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
 ##### Übertragen des USB-Images auf einen USB-Stick
 - unter Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
 - unter Linux/OS X -> 'dd if=gluon2futro.img of=/dev/DeinUsbDevice bs=1m' (z.B. /dev/sdb (ohne 1,2,3 etc.))
@@ -31,14 +31,14 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 
 6) Den Futro S550 einschalten.
 
-7) Warten (je nach CF-Speed ca. 10-60 Sekunden) bis es 5 x piept.
+7) Warten (je nach CF-Speed ca. 20-60 Sekunden) bis es 5 x piept.
 (piep,piep,piep - piep,piep)
 
 8) Der Futro S550 schaltet sich automatisch aus.
 
 9) USB-Stick entfernen und den Futro erneut einschalten.
 
-10) Falls ein Factory-Image verwendet wurde, kann per http://192.168.1.1 auf
+10) Falls ein Factory-Image verwendet wurde, kann dann per http://192.168.1.1 auf
 die Konfigurationsseite des Futro S550 zugegriffen werden.
 
 
@@ -51,8 +51,9 @@ Auf einem, an dem Futro angeschlossenen Monitor, wird die Fehlerursache angezeig
 (Evtl. könnte man das Skript 'bitte_nicht_loeschen.sh' auf dem vorbereiteten USB-Stick auch noch so anpassen, dass die Fehlerursache in einer Datei auf dem USB-Stick abgelegt wird.)
 
 ### Info:
-Aus unbekannten Gründen scheitert das korrekte Mounten des USB-Sticks bei einem von zehn Versuchen :o(
-Dann piept der Futro wie wild -> nochmal versuchen!
+Aus mir unbekannten Gründen scheiter das korrekte Mounten des USB-Sticks bei einem von zehn Versuchen :o( <br>
+Dann piept der Futro wie wild -> nochmal versuchen!<br> 
+(Es liegt wohl an meinem sehr alten 256MB USB-Stick. Mit aktuellen USB-Sticks tritt dieses Verhalten nicht auf.)
 
 ---
 
@@ -66,8 +67,10 @@ siehe http://tinycorelinux.net/
 ## Futro S550 Bedienung ohne Monitor aber mit angeschlossener Tastatur
 Alle Kommandos sollte nacheinander eingegeben werden!
 
-#### "halt on errors" ausschalten, damit der Futro S550 auch ohne Tastatur bootet:
-Den Futro S550 starten und immer wieder F2 drücken bis er piept!
+#### Den Bios-Modus vom Futro aktivieren
+- Den Futro S550 starten und immer wieder F2 drücken bis er piept!
+
+#### "halt on errors" ausschalten. Der Futro S550 bootet dann auch ohne Tastatur.
 - 3x runter
 - enter
 - enter
@@ -75,22 +78,23 @@ Den Futro S550 starten und immer wieder F2 drücken bis er piept!
 - enter
 - esc
 
-#### "in case of power failure" auf "always on" stellen. Der Futro S550 startet dann sobald er Strom hat.
-
+#### "in case of power failure" auf "always on" stellen. Der Futro S550 startet dann sobald er Strom bekommt (z.B. nach einem Stromausfall).
 - 3x rechts
 - 3x runter
 - enter
 - hoch
 - enter
 
-#### Speichern und beenden
+#### Bios-Einstellungen speichern und beenden
 
 - F10
 - enter
 
 #### Booten von USB Stick
 
-ganz oft F12 drücken (ruhig nen paar Sekunden um sicher zu sein, dass der boot screen durch ist)
+Den Futro S550 starten und ganz oft F12 drücken. (Ruhig ein paar Sekunden, um sicher zu sein, dass der Boot-Screen durch ist.)
 
 - 2x runter
 - enter
+
+---
