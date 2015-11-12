@@ -65,7 +65,7 @@ siehe http://tinycorelinux.net/
 <br>
 ---
 ## Futro S550 Bedienung ohne Monitor aber mit angeschlossener Tastatur
-Alle Kommandos sollte nacheinander eingegeben werden!
+Alle Kommandos müssen nacheinander eingegeben werden!
 
 #### Den Bios-Modus vom Futro aktivieren
 - Den Futro S550 starten und immer wieder F2 drücken bis er piept!
