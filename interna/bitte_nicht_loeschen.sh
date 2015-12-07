@@ -122,6 +122,17 @@ if [ $? != "0" ]; then
   exit 1
 fi
 
+# Zur Sicherheit mal den Write Buffer weg schreiben
+echo
+echo Schreibe Write-Buffer...
+sync
+if [ $? != "0" ]; then
+  echo Fehler: Konnte Write-Buffer nicht ordentlich weg schreiben.
+  echo Abbruch!
+  exit 1
+fi
+echo
+
 # Fertig
 echo Das Image aus $IMAGE wurde erfolgreich auf die interne CF-Karte kopiert.
 echo
