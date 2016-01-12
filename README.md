@@ -11,7 +11,7 @@ Einfach ein beliebiges Gluon-x86-Image auf den vorbereiteten USB-Stick kopieren.
 ### Falls das Setup des PCs identisch zu dem eines Futro S550 ist, so werden alle Daten auf /dev/sda bzw. C:\ gelöscht!
 ---
 
-### Vorbereitung I
+### Vorbereitung
 Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
 ##### Übertragen des USB-Images auf einen USB-Stick
 - unter Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
