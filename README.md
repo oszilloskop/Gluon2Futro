@@ -17,8 +17,6 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 - unter Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
 - unter Linux/OS X -> 'dd if=gluon2futro.img of=/dev/DeinUsbDevice bs=1m' (z.B. /dev/sdb (ohne 1,2,3 etc.))
 
-### Vorbereitung II
-
 
 ### Vorgehensweise zum Flashen des Futros:
 
