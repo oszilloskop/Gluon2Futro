@@ -68,7 +68,7 @@ Dann piept der Futro wie wild -> nochmal versuchen!<br>
 ### Verwendetes USB-Boot-Linux: Tiny/MicroCore 
 siehe http://tinycorelinux.net/
 
----
+
 <br>
 <br>
 ---
