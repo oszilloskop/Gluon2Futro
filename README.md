@@ -75,6 +75,12 @@ siehe http://tinycorelinux.net/
 ## Futro S550 Bedienung ohne Monitor aber mit angeschlossener Tastatur
 Alle Kommandos müssen nacheinander eingegeben werden!
 
+#### Booten von einem USB Stick
+Den Futro S550 starten und ganz oft F12 drücken. (Ruhig ein paar Sekunden, um sicher zu sein, dass der Boot-Screen durch ist.)
+
+- 2x runter
+- enter
+
 #### Den Bios-Modus vom Futro aktivieren
 - Den Futro S550 starten und immer wieder F2 drücken bis er piept!
 
@@ -96,13 +102,6 @@ Alle Kommandos müssen nacheinander eingegeben werden!
 #### Bios-Einstellungen speichern und beenden
 
 - F10
-- enter
-
-#### Booten von USB Stick
-
-Den Futro S550 starten und ganz oft F12 drücken. (Ruhig ein paar Sekunden, um sicher zu sein, dass der Boot-Screen durch ist.)
-
-- 2x runter
 - enter
 
 ---
