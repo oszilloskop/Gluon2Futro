@@ -83,7 +83,7 @@ Den Futro S550 starten und ganz oft F12 drücken. (Ruhig ein paar Sekunden, um s
 
 ---
 
-### Folgende Kommandos müssen nacheinander eingegeben werden!
+### Folgende Tasten-Kommandos müssen nacheinander eingegeben werden!
 #### Den Bios-Modus vom Futro aktivieren
 - Den Futro S550 starten und immer wieder F2 drücken bis er piept!
 
