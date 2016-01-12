@@ -73,7 +73,6 @@ siehe http://tinycorelinux.net/
 <br>
 ---
 ## Futro S550 Bedienung ohne Monitor aber mit angeschlossener Tastatur
-
 ---
 
 #### Booten von einem USB Stick
