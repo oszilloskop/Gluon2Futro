@@ -1,5 +1,6 @@
 ## USB-Stick - Gluon2Futro (Win / Linux / OS X)
-Mit einem präparierten USB-Stick kann ein beliebiges Gluon-x86-Image auf die interne CF-Karte eines Futro S550 übertragen werden.
+## Neu: Jetzt auch mit Futro S550-2 Unterstützung.
+Mit einem präparierten USB-Stick kann ein beliebiges Gluon-x86-Image auf die interne CF-Karte eines Futro S550 oder Futro S550-2 übertragen werden.
 Der Vorgang ist voll automatisiert. Es wird kein Monitor und keine Tastatur benötigt.
 
 Einfach ein beliebiges Gluon-x86-Image auf den vorbereiteten USB-Stick kopieren. Wird dann der Futro S550 mit diesem vorbereiteten USB-Stick gebootet, so wird das Gluon-x86-Image von dem vorbereiteten USB-Stick auf die interne CF-Karte des Futros übertragen.
@@ -10,11 +11,13 @@ Einfach ein beliebiges Gluon-x86-Image auf den vorbereiteten USB-Stick kopieren.
 ### Falls das Setup des PCs identisch zu dem eines Futro S550 ist, so werden alle Daten auf /dev/sda bzw. C:\ gelöscht!
 ---
 
-### Vorbereitung
+### Vorbereitung I
 Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
 ##### Übertragen des USB-Images auf einen USB-Stick
 - unter Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
 - unter Linux/OS X -> 'dd if=gluon2futro.img of=/dev/DeinUsbDevice bs=1m' (z.B. /dev/sdb (ohne 1,2,3 etc.))
+
+### Vorbereitung II
 
 
 ### Vorgehensweise zum Flashen des Futros:
@@ -31,14 +34,21 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 
 6) Den Futro S550 einschalten.
 
-7) Warten (je nach CF-Speed ca. 20-60 Sekunden) bis es 5 x piept.
+7) Beim Booten mittels F12-Taste den USB-Stick als Boot-Medium auswählen.  
+
+    ODER:  
+    Das neueste BIOS 6.00.1.16 installieren.  
+    Und im Bios "Force USB Boot" aktivieren. Dadurch wird bei ggf. eingestecktem USB-Stick immer von diesem gebootet.  
+    Der Weg über die F12-Taste kann so umgangen werden.  
+
+8) Warten (je nach CF-Speed ca. 20-60 Sekunden) bis es 5 x piept.
 (piep,piep,piep - piep,piep)
 
-8) Der Futro S550 schaltet sich automatisch aus.
+9) Der Futro S550 schaltet sich automatisch aus.
 
-9) USB-Stick entfernen und den Futro erneut einschalten.
+10) USB-Stick entfernen und den Futro erneut einschalten.
 
-10) Falls ein Factory-Image verwendet wurde, kann dann per http://192.168.1.1 auf
+11) Falls ein Factory-Image verwendet wurde, kann dann per http://192.168.1.1 auf
 die Konfigurationsseite des Futro S550 zugegriffen werden.
 
 

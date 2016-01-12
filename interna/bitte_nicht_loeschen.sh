@@ -14,27 +14,33 @@
 #
 # Vorgehensweise zum Flashen des Futros:
 #
-#  1) Den vorbereiteten USB-Stick mit einem laufenden PC verbinden.
+#  1)  Den vorbereiteten USB-Stick mit einem laufenden PC verbinden.
 #
-#  2) Ein bereits vorhandenes Gluon-x86-Image (mit Endung .img.gz) auf dem USB-Stick loeschen.
+#  2)  Ein bereits vorhandenes Gluon-x86-Image (mit Endung .img.gz) auf dem USB-Stick loeschen.
 #
-#  3) Ein neues komprimiertes Gluon-x86-Image (mit Endung .img.gz) auf den USB-Stick kopieren.
+#  3)  Ein neues komprimiertes Gluon-x86-Image (mit Endung .img.gz) auf den USB-Stick kopieren.
 #
-#  4) Den USB-Stick von dem PC trennen.
+#  4)  Den USB-Stick von dem PC trennen.
 #
-#  5) Den USB-Stick in einen ausgeschalteten Futro S550 stecken.
+#  5)  Den USB-Stick in einen ausgeschalteten Futro S550 stecken.
 #
-#  6) Den Futro S550 einschalten.
+#  6a) Den Futro S550 einschalten.
+#  6b) Beim Booten mittels F12-Taste den USB-Stick als Boot-Medium auswählen.
 #
-#  7) Warten (je nach CF-Speed ca. 20-60 Sekunden) bis es 5 x piept.
-#    (piep,piep,piep - piep,piep)
+#      ODER:
+#      Das neueste BIOS 6.00.1.16 installieren.
+#      Dort einstellen, das bei ggf. eingestecktem USB-Stick immer von diesem gebootet wird.
+#      Der Weg über die F12-Taste kann so umgangen werden.
 #
-#  8) Der Futro S550 schaltet sich automatisch aus.
+#  7)  Warten (je nach CF-Speed ca. 20-60 Sekunden) bis es 5 x piept.
+#      (piep,piep,piep - piep,piep)
 #
-#  9) USB-Stick entfernen und den Futro erneut einschalten.
+#  8)  Der Futro S550 schaltet sich automatisch aus.
 #
-# 10) Falls ein Factory-Image verwendet wurde, kann per http://192.168.1.1 auf
-#     die Konfigurationsseite des Futro S550 zugegriffen werden.
+#  9)  USB-Stick entfernen und den Futro erneut einschalten.
+#
+# 10)  Falls ein Factory-Image verwendet wurde, kann per http://192.168.1.1 auf
+#      die Konfigurationsseite des Futro S550 zugegriffen werden.
 #
 #
 # Im Fehlerfall:
@@ -74,16 +80,22 @@
 # Los geht's
 
 
-# Sicherheitstest, ob es sich wirklich um einen Prozessor eines Futro S550 handelt
+# Sicherheitstest, ob es sich wirklich um einen Prozessor eines Futro S550 oder S550-2 handelt
 echo Teste auf AMD Sempron Prozessor...
-echo
-if ! (grep -Fq "Mobile AMD Sempron(tm) Processor 2100+" /proc/cpuinfo) ; then
-  echo
-  echo Fehler: Kein AMD Sempron Prozessor 2100+ gefunden.
-  echo Fehlergrund: Es handel sich wohl nicht um einen Futro S550.
-  echo
-  exit 1
+if (grep -Fq "Mobile AMD Sempron(tm) Processor 2100+" /proc/cpuinfo) ; then
+  echo "AMD Sempron Prozessor 2100+ gefunden -> Futro S550"
+else
+  if (grep -Fq "Mobile AMD Sempron(tm) Processor 200U" /proc/cpuinfo) ; then
+    echo "AMD Sempron Prozessor 200U gefunden -> Futro S550-2"
+  else
+    echo
+    echo Fehler: Keinen AMD Sempron Prozessor 2100+ oder 200U gefunden.
+    echo Fehlergrund: Kein Futro S550 oder S550-2.
+    echo
+    exit 1
+  fi
 fi
+echo
 
 # Komprimierte Image-Datei auf USB-Stick suchen
 echo Suche Image...
@@ -122,12 +134,12 @@ if [ $? != "0" ]; then
   exit 1
 fi
 
-# Zur Sicherheit mal den Write Buffer weg schreiben
+#Nochmall alle Write Buffer synchronisieren
 echo
-echo Schreibe Write-Buffer...
+echo Synchronisiere Write-Buffer...
 sync
 if [ $? != "0" ]; then
-  echo Fehler: Konnte Write-Buffer nicht ordentlich weg schreiben.
+  echo Fehler: Konnte Write-Buffer nicht ordentlich schreiben.
   echo Abbruch!
   exit 1
 fi
@@ -139,6 +151,8 @@ echo
 echo
 echo Bitte den USB-Stick entfernen und das System neu starten.
 echo
+
+
 
 # Alles o.k. -> 5 x Beep (3x - kurze Pause - 2x)
 echo -e "\a" > /dev/tty7
