@@ -1,9 +1,9 @@
 ## USB-Stick - Gluon2Futro (Win / Linux / OS X)
-## Neu: Jetzt auch mit Futro S550-2 Unterstützung.
-Mit einem präparierten USB-Stick kann ein beliebiges Gluon-x86-Image auf die interne CF-Karte eines Futro S550 oder Futro S550-2 übertragen werden.
-Der Vorgang ist voll automatisiert. Es wird kein Monitor und keine Tastatur benötigt.
+## Neu: Jetzt auch mit Futro S550-2 Unterstützung!
+Mit einem präparierten USB-Stick kann ein beliebiges Gluon-x86-Image auf die interne CF-Karte eines Futro S550 oder eines Futro S550-2 übertragen werden.
+Der Vorgang ist voll automatisiert. Es wird max. eine USB-Tastatur benötigt. Ein an dem Futro angeschlossener Monitor ist nicht zwingend notwendig (siehe weiter unten).
 
-Einfach ein beliebiges Gluon-x86-Image auf den vorbereiteten USB-Stick kopieren. Wird dann der Futro S550 mit diesem vorbereiteten USB-Stick gebootet, so wird das Gluon-x86-Image von dem vorbereiteten USB-Stick auf die interne CF-Karte des Futros übertragen.
+Einfach nur ein beliebiges Gluon-x86-Image per PC (Win / Linux / OS X) auf den vorbereiteten USB-Stick kopieren. Wird dann der Futro S550 mit diesem vorbereiteten USB-Stick gebootet, so wird das Gluon-x86-Image von dem vorbereiteten USB-Stick auf die interne CF-Karte des Futros übertragen.
 
 ---
 # ACHTUNG:
@@ -24,7 +24,7 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 
 2) Ein ggf. vorhandenes altes Gluon-x86-Image (mit Endung .img.gz) von dem USB-Stick löschen.
 
-3) Ein neues komprimiertes Gluon-x86-Image (mit Endung .img.gz) auf den USB-Stick kopieren.
+3) Ein beliebiges, neues und komprimiertes Gluon-x86-Image (mit Endung .img.gz) auf den USB-Stick kopieren.
 
 4) Den USB-Stick von dem PC trennen.
 
@@ -32,7 +32,7 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 
 6) Den Futro S550 einschalten.
 
-7) Beim Booten mittels F12-Taste den USB-Stick als Boot-Medium auswählen.  
+7) Beim Booten mittels F12-Taste den USB-Stick als Boot-Medium auswählen (siehe weiter unten).  
 
     ODER:  
     Das neueste BIOS 6.00.1.16 installieren.  
