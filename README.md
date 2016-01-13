@@ -11,14 +11,6 @@ Einfach nur ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbe
 ### Falls das Setup des PCs identisch zu dem eines Futro S550 ist, so werden alle Daten auf /dev/sda bzw. C:\ gelöscht!
 ---
 
----
-
-##### Hinweis:
-Evtl. vorher das BIOS des Futro S550 aktualisiert. Hier gibt es weiter Infos dazu:
-https://github.com/oszilloskop/FutroS550BiosUpdate 
-
----
-
 ### Vorbereitung
 Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
 ##### Übertragen des USB-Images auf einen USB-Stick
@@ -43,7 +35,7 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 7) Beim Booten mittels F12-Taste den USB-Stick als Boot-Medium auswählen ([siehe weiter unten](https://github.com/oszilloskop/Gluon2Futro#futro-s550-bedienung-ohne-monitor-aber-mit-angeschlossener-tastatur)).  
 
     ODER:  
-    Das neueste BIOS installieren (siehe Hinweis oben)
+    Das neueste BIOS installieren (siehe Hinweis unten)
     und im BIOS "Force USB Boot" aktivieren. Dadurch wird bei ggf. eingestecktem USB-Stick immer von diesem gebootet.  
     Der Weg über die F12-Taste kann so umgangen werden.  
 
@@ -73,12 +65,21 @@ Dann piept der Futro wie wild -> nochmal versuchen!<br>
 
 ---
 
+### Hinweis BIOS-Update:
+Evtl. vorher das BIOS des Futro S550 aktualisiert. Hier gibt es weiter Infos dazu:
+https://github.com/oszilloskop/FutroS550BiosUpdate 
+
+---
+
+---
+
 ### Verwendetes USB-Boot-Linux: Tiny/MicroCore 
 siehe http://tinycorelinux.net/
 
 
 <br>
 <br>
+---
 ---
 ## Futro S550 Bedienung ohne Monitor aber mit angeschlossener Tastatur
 ---
