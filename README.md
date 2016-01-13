@@ -39,7 +39,7 @@ https://github.com/oszilloskop/FutroS550BiosUpdate
 
     ODER:  
     Das neueste BIOS installieren (siehe Hinweis oben)
-    Und im BIOS "Force USB Boot" aktivieren. Dadurch wird bei ggf. eingestecktem USB-Stick immer von diesem gebootet.  
+    und im BIOS "Force USB Boot" aktivieren. Dadurch wird bei ggf. eingestecktem USB-Stick immer von diesem gebootet.  
     Der Weg über die F12-Taste kann so umgangen werden.  
 
 8) Warten (je nach CF-Speed ca. 20-60 Sekunden) bis es 5 x piept.
