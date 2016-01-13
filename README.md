@@ -18,7 +18,7 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 - unter Linux/OS X -> 'dd if=gluon2futro.img of=/dev/DeinUsbDevice bs=1m' (z.B. /dev/sdb (ohne 1,2,3 etc.))
 
 ##### Hinweis:
-Falls das BIOS des Futro S550 aktualisiert werden soll, hier gibts infos dazu:
+Evtl. vorher das BIOS des Futro S550 aktualisiert. Hier gibt es weiter Infos dazu:
 https://github.com/oszilloskop/FutroS550BiosUpdate 
 
 ### Vorgehensweise zum Flashen des Futros:
