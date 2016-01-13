@@ -12,7 +12,8 @@ Einfach nur ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbe
 ---
 
 ### Vorbereitung:
-Ggf. vorher das BIOS des Futro S550 aktualisiert. Hier gibt es weiter Infos dazu: https://github.com/oszilloskop/FutroS550BiosUpdate
+Ggf. vorher das BIOS des Futro S550 aktualisiert.  
+Hier gibt es weiter Infos dazu: https://github.com/oszilloskop/FutroS550BiosUpdate
 
 ### Los geht’s:  
 Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
