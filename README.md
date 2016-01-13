@@ -71,15 +71,12 @@ https://github.com/oszilloskop/FutroS550BiosUpdate
 
 ---
 
----
-
 ### Verwendetes USB-Boot-Linux: Tiny/MicroCore 
 siehe http://tinycorelinux.net/
 
 
 <br>
 <br>
----
 ---
 ## Futro S550 Bedienung ohne Monitor aber mit angeschlossener Tastatur
 ---
