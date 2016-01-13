@@ -12,6 +12,8 @@ Einfach nur ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbe
 ---
 
 ### Vorbereitung
+### Hinweis BIOS-Update:
+(Ggf. vorher das BIOS des Futro S550 aktualisiert. Hier gibt es weiter Infos dazu: https://github.com/oszilloskop/FutroS550BiosUpdate)  
 Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
 ##### Übertragen des USB-Images auf einen USB-Stick
 - unter Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
@@ -62,12 +64,6 @@ Auf einem, an dem Futro angeschlossenen Monitor, wird die Fehlerursache angezeig
 Aus mir unbekannten Gründen scheiter das korrekte Mounten des USB-Sticks bei einem von zehn Versuchen :o( <br>
 Dann piept der Futro wie wild -> nochmal versuchen!<br> 
 (Es liegt wohl an meinem sehr alten 256MB USB-Stick. Mit aktuellen USB-Sticks tritt dieses Verhalten nicht auf.)
-
----
-
-### Hinweis BIOS-Update:
-Evtl. vorher das BIOS des Futro S550 aktualisiert. Hier gibt es weiter Infos dazu:
-https://github.com/oszilloskop/FutroS550BiosUpdate 
 
 ---
 
