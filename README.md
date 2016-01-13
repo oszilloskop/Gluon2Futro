@@ -11,15 +11,20 @@ Einfach nur ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbe
 ### Falls das Setup des PCs identisch zu dem eines Futro S550 ist, so werden alle Daten auf /dev/sda bzw. C:\ gelöscht!
 ---
 
+---
+
+##### Hinweis:
+Evtl. vorher das BIOS des Futro S550 aktualisiert. Hier gibt es weiter Infos dazu:
+https://github.com/oszilloskop/FutroS550BiosUpdate 
+
+---
+
 ### Vorbereitung
 Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
 ##### Übertragen des USB-Images auf einen USB-Stick
 - unter Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
 - unter Linux/OS X -> 'dd if=gluon2futro.img of=/dev/DeinUsbDevice bs=1m' (z.B. /dev/sdb (ohne 1,2,3 etc.))
 
-##### Hinweis:
-Evtl. vorher das BIOS des Futro S550 aktualisiert. Hier gibt es weiter Infos dazu:
-https://github.com/oszilloskop/FutroS550BiosUpdate 
 
 ### Vorgehensweise zum Flashen des Futros:
 
