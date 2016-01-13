@@ -35,7 +35,7 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 7) Beim Booten mittels F12-Taste den USB-Stick als Boot-Medium auswählen ([siehe weiter unten](https://github.com/oszilloskop/Gluon2Futro#futro-s550-bedienung-ohne-monitor-aber-mit-angeschlossener-tastatur)).  
 
     ODER:  
-    Das neueste BIOS 6.00.1.16 installieren.  
+    Das neueste BIOS 6.00.1.16 installieren (siehe https://github.com/oszilloskop/FutroS550BiosUpdate)
     Und im Bios "Force USB Boot" aktivieren. Dadurch wird bei ggf. eingestecktem USB-Stick immer von diesem gebootet.  
     Der Weg über die F12-Taste kann so umgangen werden.  
 
