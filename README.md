@@ -17,6 +17,9 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 - unter Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
 - unter Linux/OS X -> 'dd if=gluon2futro.img of=/dev/DeinUsbDevice bs=1m' (z.B. /dev/sdb (ohne 1,2,3 etc.))
 
+##### Hinweis:
+Falls das BIOS des Futro S550 aktualisiert werden soll, hier gibts infos dazu:
+https://github.com/oszilloskop/FutroS550BiosUpdate 
 
 ### Vorgehensweise zum Flashen des Futros:
 
@@ -35,7 +38,7 @@ Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszillos
 7) Beim Booten mittels F12-Taste den USB-Stick als Boot-Medium auswählen ([siehe weiter unten](https://github.com/oszilloskop/Gluon2Futro#futro-s550-bedienung-ohne-monitor-aber-mit-angeschlossener-tastatur)).  
 
     ODER:  
-    Das neueste BIOS 6.00.1.16 installieren (siehe https://github.com/oszilloskop/FutroS550BiosUpdate)
+    Das neueste BIOS 6.00.1.16 installieren
     Und im Bios "Force USB Boot" aktivieren. Dadurch wird bei ggf. eingestecktem USB-Stick immer von diesem gebootet.  
     Der Weg über die F12-Taste kann so umgangen werden.  
 
