@@ -77,6 +77,7 @@ siehe http://tinycorelinux.net/
 
 <br>
 <br>
+
 ---
 ## Futro S550 Bedienung ohne Monitor aber mit angeschlossener Tastatur
 ---
