@@ -1,6 +1,6 @@
 ## USB-Stick - Gluon2Futro (Win/Linux/OS X)
 ## Neu: Jetzt auch mit Futro S550-2 Unterstützung!
-Mit einem präparierten USB-Stick kann ein beliebiges Gluon-x86-Image auf die interne CF-Karte eines Futro S550 oder eines Futro S550-2 übertragen werden.
+Mit einem präparierten USB-Stick kann ein beliebiges Freifunk Gluon-x86-Image auf die interne CF-Karte eines Futro S550 oder eines Futro S550-2 übertragen werden.
 Der Vorgang ist voll automatisiert. Es wird max. eine Tastatur benötigt. Ein an dem Futro angeschlossener Monitor ist nicht zwingend notwendig ([siehe weiter unten](https://github.com/oszilloskop/Gluon2Futro#futro-s550-bedienung-ohne-monitor-aber-mit-angeschlossener-tastatur)).
 
 Einfach nur ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbereiteten USB-Stick kopieren. Wird dann der Futro S550 mit diesem vorbereiteten USB-Stick gebootet, so wird das Gluon-x86-Image von dem vorbereiteten USB-Stick auf die interne CF-Karte des Futros übertragen.
