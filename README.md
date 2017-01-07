@@ -90,8 +90,12 @@ Den Futro S550 starten und ganz oft F12 drücken. (Ruhig ein paar Sekunden, um s
 ---
 
 ### Folgende Tasten-Kommandos müssen nacheinander eingegeben werden!
-#### Den Bios-Modus vom Futro aktivieren
+#### Den BIOS-Modus vom Futro aktivieren
 - Den Futro S550 starten und immer wieder F2 drücken bis er piept!
+
+## Achtung: 
+Da das Futro-BIOS Durchlaufmenues benutzt, gelten folgende Tastenreihenfolgen nur wenn ***noch*** die BIOS-Default-Werte eingestellt sind. 
+
 
 #### "halt on errors" ausschalten. Der Futro S550 bootet dann auch ohne Tastatur.
 - 3x runter
