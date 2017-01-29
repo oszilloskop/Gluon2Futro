@@ -23,7 +23,7 @@ Das Gluon2Futro-Image [gluon2futro.img](https://raw.githubusercontent.com/oszill
 - unter Linux -> 'dd if=gluon2futro.img of=/dev/DeinUsbDevice bs=1m' (z.B. /dev/sdb (ohne 1,2,3 etc.))
 
 
-### Vorgehensweise zum Flashen eines Futros mit hilfe des Gluon2Futro-USB-Sticks:
+### Vorgehensweise zum Flashen eines Futros mit Hilfe des Gluon2Futro-USB-Sticks:
 
 1) Den USB-Stick mit einem laufenden PC (Win/Linux/OS X) verbinden.
 
