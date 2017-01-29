@@ -16,16 +16,16 @@ Ggf. vorher das BIOS des Futro S550 aktualisiert.
 Hier gibt es weiter Infos dazu: [FutroS550BiosUpdate](https://github.com/oszilloskop/FutroS550BiosUpdate)
 
 ### Los geht’s:  
-Das USB-Stick-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
-##### Übertragen des USB-Images auf einen USB-Stick
+Das Gluon2Futro-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
+##### Übertragen des Gluon2Futro-Images auf einen USB-Stick
 - unter Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
 - unter Mac OS X -> z.B. das Tool [ApplePi-Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker) benutzen
 - unter Linux -> 'dd if=gluon2futro.img of=/dev/DeinUsbDevice bs=1m' (z.B. /dev/sdb (ohne 1,2,3 etc.))
 
 
-### Vorgehensweise zum Flashen des Futros:
+### Vorgehensweise zum Flashen eines Futros mit hilfe des Gluon2Futro-USB-Sticks:
 
-1) Den vorbereiteten USB-Stick mit einem laufenden PC (Win/Linux/OS X) verbinden.
+1) Den USB-Stick mit einem laufenden PC (Win/Linux/OS X) verbinden.
 
 2) Ein ggf. vorhandenes altes Gluon-x86-Image (mit Endung .img.gz) von dem USB-Stick löschen.
 
