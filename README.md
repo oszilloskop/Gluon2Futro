@@ -27,7 +27,7 @@ Das Gluon2Futro-Image [gluon2futro.img](https://raw.githubusercontent.com/oszill
 
 1) Den USB-Stick mit einem laufenden PC (Win/Linux/OS X) verbinden.
 
-2) Eine ggf. vorhandene alte Gluon-x86-Image-Dastei (mit Endung .img.gz) auf dem USB-Stick löschen.
+2) Eine ggf. vorhandene alte Gluon-x86-Image-Datei (mit Endung .img.gz) auf dem USB-Stick löschen.
 
 3) Ein beliebiges, neues und komprimiertes Gluon-x86-Image (mit Endung .img.gz) auf den USB-Stick kopieren.
 
