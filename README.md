@@ -1,7 +1,7 @@
 ## USB-Stick - Gluon2Futro (Win/Linux/OS X)
 ## Neu: Jetzt auch mit Wyse R90LE(W) Unterstützung!
 Mit einem präparierten USB-Stick kann ein beliebiges Freifunk Gluon-x86-Image auf die interne CF-Karte eines Futro
-S550, S550-2 oder einen Wyse R90LE(W) übertragen werden.
+S550, S550-2 oder eines Wyse R90LE(W) übertragen werden.
 Der Vorgang ist voll automatisiert. Es wird max. eine Tastatur benötigt. Ein an dem Futro angeschlossener Monitor ist nicht zwingend notwendig ([siehe weiter unten](https://github.com/oszilloskop/Gluon2Futro#futro-s550-bedienung-ohne-monitor-aber-mit-angeschlossener-tastatur)).
 
 Einfach nur ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbereiteten USB-Stick kopieren. Wird dann der Futro S550 mit diesem vorbereiteten USB-Stick gebootet, so wird das Gluon-x86-Image von dem vorbereiteten USB-Stick auf die interne CF-Karte des Futros übertragen.
