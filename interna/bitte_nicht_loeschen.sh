@@ -84,15 +84,19 @@
 echo Teste auf AMD Sempron Prozessor...
 if (grep -Fq "Mobile AMD Sempron(tm) Processor 2100+" /proc/cpuinfo) ; then
   echo "AMD Sempron Prozessor 2100+ gefunden -> Futro S550"
-else
+else 
   if (grep -Fq "AMD Sempron(tm) Processor 200U" /proc/cpuinfo) ; then
     echo "AMD Sempron Prozessor 200U gefunden -> Futro S550-2"
-  else
-    echo
-    echo Fehler: Keinen AMD Sempron Prozessor 2100+ oder 200U gefunden.
-    echo Fehlergrund: Kein Futro S550 oder S550-2.
-    echo
-    exit 1
+  else 
+    if (grep -Fq "AMD Sempron(tm) Processor 210U" /proc/cpuinfo) ; then
+      echo "AMD Sempron Prozessor 210U gefunden -> Wyse R90LE"
+    else
+      echo
+      echo Fehler: Keinen AMD Sempron Prozessor 2100+, 200U oder 210U gefunden.
+      echo Fehlergrund: Kein Futro S550 oder S550-2, kein Wyse R90LE.
+      echo
+      exit 1
+    fi
   fi
 fi
 echo
