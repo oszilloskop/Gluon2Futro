@@ -4,7 +4,7 @@ Mit einem präparierten USB-Stick kann ein beliebiges Freifunk Gluon-x86-Image a
 S550, S550-2 oder eines Wyse R90LE(W) übertragen werden.
 Der Vorgang ist voll automatisiert. Es wird max. eine Tastatur benötigt. Ein an dem Futro angeschlossener Monitor ist nicht zwingend notwendig ([siehe weiter unten](https://github.com/oszilloskop/Gluon2Futro#futro-s550-bedienung-ohne-monitor-aber-mit-angeschlossener-tastatur)).
 
-Einfach nur ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbereiteten USB-Stick kopieren. Wird dann der Futro S550 mit diesem vorbereiteten USB-Stick gebootet, so wird das Gluon-x86-Image von dem vorbereiteten USB-Stick auf die interne CF-Karte des Futros übertragen.
+Einfach ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbereiteten USB-Stick kopieren. Wird dann der Futro S550 mit diesem vorbereiteten USB-Stick gebootet, so wird das Gluon-x86-Image automatisch von dem vorbereiteten USB-Stick auf die interne CF-Karte des Futros übertragen.
 
 ---
 # ACHTUNG:
@@ -69,11 +69,6 @@ Aus mir unbekannten Gründen scheiter das korrekte Mounten des USB-Sticks bei ei
 Dann piept der Futro wie wild -> nochmal versuchen!<br> 
 (Es liegt wohl an meinem sehr alten 256MB USB-Stick. Mit aktuellen USB-Sticks tritt dieses Verhalten nicht auf.)
 
----
-
-### Verwendetes USB-Boot-Linux: Tiny/MicroCore 
-siehe http://tinycorelinux.net/
-
 
 <br>
 <br>
@@ -119,3 +114,6 @@ Da das Futro-BIOS Durchlaufmenues benutzt, gelten folgende Tastenreihenfolgen nu
 - enter
 
 ---
+
+### Verwendetes USB-Boot-Linux: Tiny/MicroCore 
+siehe http://tinycorelinux.net/
