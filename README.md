@@ -115,5 +115,5 @@ Da das Futro-BIOS Durchlaufmenues benutzt, gelten folgende Tastenreihenfolgen nu
 
 ---
 
-### Verwendetes USB-Boot-Linux: Tiny/MicroCore 
+## Verwendetes USB-Boot-Linux: Tiny/MicroCore 
 siehe http://tinycorelinux.net/
