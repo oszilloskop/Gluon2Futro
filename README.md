@@ -52,8 +52,7 @@ Das Gluon2Futro-Image [gluon2futro.img](https://raw.githubusercontent.com/oszill
 
 10) USB-Stick entfernen und den Futro erneut einschalten.
 
-11) Falls ein Factory-Image verwendet wurde, kann dann per http://192.168.1.1 auf
-die Konfigurationsseite des Futro S550 zugegriffen werden.
+11) Falls ein Gluon-Factory-Image verwendet wurde, dann verhält sich der Futro jetzt wie ein normaler frisch geflashter Freifunk-Router. Es kann nach dem Flashen per http://192.168.1.1 auf die Konfigurationsseite des Futro S550 zugegriffen werden.
 
 
 ### Im Fehlerfall:
