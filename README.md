@@ -22,7 +22,7 @@ Das Gluon2Futro-Image [gluon2futro.img](https://raw.githubusercontent.com/oszill
 ### Übertragen des Gluon2Futro-Images auf einen USB-Stick:
 - unter Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
 - unter Mac OS X -> z.B. das Tool [ApplePi-Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker) benutzen
-- unter Linux -> 'dd if=gluon2futro.img of=/dev/DeinUsbDevice bs=1m' (z.B. /dev/sdb (ohne 1,2,3 etc.))
+- unter Linux -> 'dd status=progress if=gluon2futro.img of=/dev/DeinUsbDevice bs=1M' (z.B. /dev/sdb (ohne 1,2,3 etc.))
 
 ### Vorgehensweise zum Flashen eines Futros mit Hilfe des Gluon2Futro-USB-Sticks:
 
