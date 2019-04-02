@@ -6,7 +6,7 @@ Mit einem präparierten/vorbereiteten USB-Stick kann ein beliebiges Freifunk Glu
 Der Vorgang ist voll automatisiert. Es wird max. eine Tastatur benötigt. Ein an dem Futro angeschlossener Monitor ist nicht zwingend notwendig ([siehe weiter unten](https://github.com/oszilloskop/Gluon2Futro#futro-s550-bedienung-ohne-monitor-aber-mit-angeschlossener-tastatur)).
 
 Das "Gluon-Flashen" eines Futros läuft dann wie folgt aub:<br>
-Einfach ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf einen vorbereiteten Gluon2Futro-USB-Stick kopieren. Wird dann der Futro mit diesem USB-Stick gebootet, so wird das dort abgelegte Gluon-x86-Image automatisch auf die interne CF-Karte des Futros übertragen.
+Einfach ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbereiteten Gluon2Futro-USB-Stick kopieren. Wird dann der Futro mit diesem USB-Stick gebootet, so wird das dort abgelegte Gluon-x86-Image automatisch auf die interne CF-Karte des Futros übertragen.
 
 ---
 # ACHTUNG:
