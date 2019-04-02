@@ -4,19 +4,20 @@ Mit einem präparierten USB-Stick kann ein beliebiges Freifunk Gluon-x86-Image a
 S550, S550-2 oder eines Wyse R90LE(W) übertragen werden.
 Der Vorgang ist voll automatisiert. Es wird max. eine Tastatur benötigt. Ein an dem Futro angeschlossener Monitor ist nicht zwingend notwendig ([siehe weiter unten](https://github.com/oszilloskop/Gluon2Futro#futro-s550-bedienung-ohne-monitor-aber-mit-angeschlossener-tastatur)).
 
-Einfach ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbereiteten USB-Stick kopieren. Wird dann der Futro S550 mit diesem vorbereiteten USB-Stick gebootet, so wird das Gluon-x86-Image automatisch von dem vorbereiteten USB-Stick auf die interne CF-Karte des Futros übertragen.
+Das "Gluon-Flashen" eines Futros läuft dann wie folgt aub:<br>
+Einfach ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf einen vorbereiteten Gluon2Futro-USB-Stick kopieren. Wird dann der Futro mit diesem USB-Stick gebootet, so wird das dort abgelegte Gluon-x86-Image automatisch auf die interne CF-Karte des Futros übertragen.
 
 ---
 # ACHTUNG:
-### Mit dem vorbereiteten USB-Stick auf keinen Fall einen PC booten!
+### Mit dem Gluon2Futro-USB-Stick auf keinen Fall einen PC booten!
 ### Falls das Setup des PCs identisch zu dem eines Futro S550 ist, so werden alle Daten auf /dev/sda bzw. C:\ gelöscht!
 ---
 
-### Vorbereitung:
+### Tip:
 Ggf. vorher das BIOS des Futro S550 aktualisiert.  
 Hier gibt es weiter Infos dazu: [FutroS550BiosUpdate](https://github.com/oszilloskop/FutroS550BiosUpdate)
 
-### Los geht’s:  
+## Erzeugen des Gluon2Futro-USB-Sticks:  
 Das Gluon2Futro-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
 
 ### Übertragen des Gluon2Futro-Images auf einen USB-Stick:
@@ -24,7 +25,7 @@ Das Gluon2Futro-Image [gluon2futro.img](https://raw.githubusercontent.com/oszill
 - unter Mac OS X -> z.B. das Tool [ApplePi-Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker) benutzen
 - unter Linux -> 'dd status=progress if=gluon2futro.img of=/dev/DeinUsbDevice bs=1M' (z.B. /dev/sdb (ohne 1,2,3 etc.))
 
-### Vorgehensweise zum Flashen eines Futros mit Hilfe des Gluon2Futro-USB-Sticks:
+## Vorgehensweise zum Flashen eines Futros mit Hilfe des Gluon2Futro-USB-Sticks:
 
 1) Den Gluon2Futro-USB-Stick mit einem laufenden PC (Win/Linux/OS X) verbinden. (Auf dem Gluon2Futro-USB-Stick befindet sich ein normales FAT-Dateisystem.)
 
