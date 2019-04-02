@@ -66,7 +66,7 @@ Auf einem, an dem Futro angeschlossenen Monitor, wird die Fehlerursache angezeig
 (Evtl. könnte man das Skript 'bitte_nicht_loeschen.sh' auf dem vorbereiteten USB-Stick auch noch so anpassen, dass die Fehlerursache in einer Datei auf dem USB-Stick abgelegt wird.)
 
 ### Info:
-Aus mir unbekannten Gründen scheiter das korrekte Mounten des USB-Sticks bei einem von zehn Versuchen :o( <br>
+Aus mir unbekannten Gründen scheitert das korrekte Mounten des USB-Sticks bei einem von zehn Versuchen :o( <br>
 Dann piept der Futro wie wild -> nochmal versuchen!<br> 
 (Es liegt wohl an meinem sehr alten 256MB USB-Stick. Mit aktuellen USB-Sticks tritt dieses Verhalten nicht auf.)
 
