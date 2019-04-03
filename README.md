@@ -11,7 +11,7 @@ Einfach ein beliebiges Gluon-x86-Image per PC (Win/Linux/OS X) auf den vorbereit
 ---
 # ACHTUNG:
 ### Mit dem Gluon2Futro-USB-Stick auf keinen Fall einen PC booten!
-### Falls das Setup des PCs identisch zu dem eines Futro S550 ist, so werden alle Daten auf /dev/sda bzw. C:\ gelöscht!
+### Falls das Setup des PCs identisch zu dem eines Futro ist, so werden alle Daten auf /dev/sda bzw. C:\ gelöscht!
 ---
 
 ### Tip:
@@ -36,9 +36,9 @@ Das Gluon2Futro-Image [gluon2futro.img](https://raw.githubusercontent.com/oszill
 
 4) Den USB-Stick von dem PC auswerfen/trennen.
 
-5) Den USB-Stick hinten in einen ausgeschalteten Futro S550 stecken.
+5) Den USB-Stick hinten in einen ausgeschalteten Futro stecken.
 
-6) Den Futro S550 einschalten.
+6) Den Futro einschalten.
 
 7) Beim Booten mittels F12-Taste den USB-Stick als Boot-Medium auswählen ([siehe weiter unten](https://github.com/oszilloskop/Gluon2Futro#futro-s550-bedienung-ohne-monitor-aber-mit-angeschlossener-tastatur)).  
 
@@ -50,11 +50,11 @@ Das Gluon2Futro-Image [gluon2futro.img](https://raw.githubusercontent.com/oszill
 8) Warten (je nach CF-Speed ca. 20-60 Sekunden) bis es 5 x piept.
 (piep,piep,piep - piep,piep)
 
-9) Der Futro S550 schaltet sich automatisch aus.
+9) Der Futro schaltet sich automatisch aus.
 
 10) USB-Stick entfernen und den Futro erneut einschalten.
 
-11) Falls ein Gluon-Factory-Image verwendet wurde, dann verhält sich der Futro jetzt wie ein normaler frisch geflashter Freifunk-Router. Es kann nach dem Flashen per http://192.168.1.1 auf die Konfigurationsseite des Futro S550 zugegriffen werden.
+11) Falls ein Gluon-Factory-Image verwendet wurde, dann verhält sich der Futro jetzt wie ein normaler frisch geflashter Freifunk-Router. Es kann nach dem Flashen per http://192.168.1.1 auf die Konfigurationsseite des Futro zugegriffen werden.
 
 
 ### Im Fehlerfall:
