@@ -32,8 +32,8 @@ Hier gibt es weiter Infos dazu: [FutroS550BiosUpdate](https://github.com/oszillo
 Das Gluon2Futro-Image [gluon2futro.img](https://raw.githubusercontent.com/oszilloskop/Gluon2Futro/master/gluon2futro.img) von GitHub herunterladen und auf einen USB-Stick übertragen. (**Alle bisherigen Daten auf dem USB-Stick gehen verloren!** Der USB-Stick sollte mind. 64 MB groß sein.)
 
 ### Übertragen des Gluon2Futro-Images auf einen USB-Stick:
-- unter Windows -> z.B. das Tool [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) benutzen
-- unter Mac OS X -> z.B. das Tool [ApplePi-Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker) benutzen
+- unter Windows -> z.B. das Tool [Etcher](https://www.balena.io/etcher/) benutzen
+- unter macOS -> z.B. das Tool [Etcher](https://www.balena.io/etcher/) benutzen
 - unter Linux -> 'dd status=progress if=gluon2futro.img of=/dev/DeinUsbDevice bs=1M' (z.B. /dev/sdb (ohne 1,2,3 etc.))
 
 ## Vorgehensweise zum Flashen eines Futros mit Hilfe des Gluon2Futro-USB-Sticks:
