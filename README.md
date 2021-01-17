@@ -1,6 +1,6 @@
 ## USB-Stick - Gluon2Futro (Win/Linux/OS X)
-#### Neu: Jetzt auch mit Wyse R90LE(W) Unterstützung!
-### Noch neuer: Jetzt mit Futro S720 Unterstützung
+#### Neu: Jetzt auch mit Futro S720  und Wyse R90LE(W) Unterstützung!
+
 Mit Hilfe dieses Projektes kann, ohne das Gehäuse öffnen zu müssen, ein beliebiges Freifunk Gluon-x86-Image auf die interne CF-Karte eines Futro S550, S550-2, S720 oder eines Wyse R90LE(W) übertragen werden.
 
 Es wird lediglich ein USB-Stick benötigt.
