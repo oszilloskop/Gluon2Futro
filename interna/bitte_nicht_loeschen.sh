@@ -4,7 +4,7 @@
 #
 # ACHTUNG:
 # Mit diesem USB-Stick auf keinen Fall einen PC booten!
-# Falls das Setup des PCs identisch zu einem Futro S550 ist,
+# Falls das Setup des PCs identisch zu einem Futro S550, S550-2, S720 oder Wyse R90LE ist,
 # so werden alle Daten auf /dev/sda bzw. C:\ geloescht!
 #
 ######################################################################################
@@ -40,7 +40,7 @@
 #  9)  USB-Stick entfernen und den Futro erneut einschalten.
 #
 # 10)  Falls ein Factory-Image verwendet wurde, kann per http://192.168.1.1 auf
-#      die Konfigurationsseite des Futro S550 zugegriffen werden.
+#      die Konfigurationsseite des Futro zugegriffen werden.
 #
 #
 # Im Fehlerfall:
@@ -70,7 +70,7 @@
 #    fuehrt zu ca. 10 Sekunden wildem Gepiepse, dann Shoutdown
 #
 #  - exit, exit 0
-#    fuehrt zu einem Shutdown ohne akustische Meldung
+#    fuehrt zu einem Shutdown ohne akustische Rückmeldung
 #
 ######################################################################################
 
@@ -80,8 +80,8 @@
 # Los geht's
 
 
-# Sicherheitstest, ob es sich wirklich um einen Prozessor eines Futro S550 oder S550-2 handelt
-echo Teste auf AMD Sempron Prozessor...
+# Sicherheitstest, ob es sich wirklich um einen Prozessor eines Futro S550, S550-2, S720 oder Wyse R90LE handelt
+echo Teste auf AMD Sempron oder AMD GX-217GA Prozessor...
 if (grep -Fq "Mobile AMD Sempron(tm) Processor 2100+" /proc/cpuinfo) ; then
   echo "AMD Sempron Prozessor 2100+ gefunden -> Futro S550"
 else 
@@ -91,15 +91,26 @@ else
     if (grep -Fq "AMD Sempron(tm) Processor 210U" /proc/cpuinfo) ; then
       echo "AMD Sempron Prozessor 210U gefunden -> Wyse R90LE"
     else
-      echo
-      echo Fehler: Keinen AMD Sempron Prozessor 2100+, 200U oder 210U gefunden.
-      echo Fehlergrund: Kein Futro S550 oder S550-2, kein Wyse R90LE.
-      echo
-      exit 1
+      if (grep -Fq "AMD GX-217GA" /proc/cpuinfo) ; then
+        echo "AMD GX-217GA Prozessor gefunden -> Futro S720"
+      else
+        echo
+        echo Fehler:
+        echo Kein Futro S550, S550-2, S720 oder Wyse R90LE.
+        echo
+        echo Fehlergrund:
+        echo Keinen AMD Sempron 2100+, 200U, 210U oder GX-217GA gefunden.
+        echo
+        echo Abbruch!
+        echo
+        sleep 3
+        exit 1
+      fi
     fi
   fi
 fi
 echo
+
 
 # Komprimierte Image-Datei auf USB-Stick suchen
 echo Suche Image...
@@ -107,6 +118,7 @@ echo
 IMAGECOUNT=$(ls *.img.gz | wc -l)
 if [ $IMAGECOUNT != "1" ]; then
   echo Fehler: Kein oder mehr als ein Image gefunden!
+  echo
   echo Abbruch!
   echo
   exit 1
@@ -124,6 +136,7 @@ echo
 gzip -dc $IMAGE > /tmp/gluon.img
 if [ $? != "0" ]; then
   echo Fehler: Konnte Image nicht entpacken.
+  echo
   echo Abbruch!
   exit 1
 fi
@@ -134,6 +147,7 @@ echo
 dd if=/tmp/gluon.img of=/dev/sda bs=1M
 if [ $? != "0" ]; then
   echo Fehler: Konnte Image nicht auf interne CF-Karte kopieren.
+  echo
   echo Abbruch!
   exit 1
 fi
@@ -144,6 +158,7 @@ echo Synchronisiere Write-Buffer...
 sync
 if [ $? != "0" ]; then
   echo Fehler: Konnte Write-Buffer nicht ordentlich schreiben.
+  echo
   echo Abbruch!
   exit 1
 fi
@@ -170,6 +185,6 @@ sleep 0.3
 echo -e "\a" > /dev/tty7
 
 
-# Wenn alles o.k. ist, immer mit "exit 0" beenden. 
+# Wenn alles o.k. ist, immer mit "exit 0" beenden.
 # Ansonsten koennte das Gepiepse losgehen...
 exit 0
