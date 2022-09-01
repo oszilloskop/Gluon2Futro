@@ -94,17 +94,21 @@ else
       if (grep -Fq "AMD GX-217GA" /proc/cpuinfo) ; then
         echo "AMD GX-217GA Prozessor gefunden -> Futro S720"
       else
-        echo
-        echo Fehler:
-        echo Kein Futro S550, S550-2, S720 oder Wyse R90LE.
-        echo
-        echo Fehlergrund:
-        echo Keinen AMD Sempron 2100+, 200U, 210U oder GX-217GA gefunden.
-        echo
-        echo Abbruch!
-        echo
-        sleep 3
-        exit 1
+        if (grep -Fq "AMD G-T44R Processor" /proc/cpuinfo) ; then
+          echo "AMD G-T44R Processor Prozessor gefunden -> Futro S700"
+        else
+          echo
+          echo Fehler:
+          echo Kein Futro S550, S550-2, S700, S720 oder Wyse R90LE.
+          echo
+          echo Fehlergrund:
+          echo Keinen AMD Sempron 2100+, 200U, 210U, G-T44R oder GX-217GA gefunden.
+          echo
+          echo Abbruch!
+          echo
+          sleep 3
+          exit 1
+        fi
       fi
     fi
   fi

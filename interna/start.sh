@@ -31,13 +31,13 @@ echo
 echo
 echo "################################################################################"
 echo "#                                                                              #"
-echo "#                       GLUON auf Futro S550 Autoinstaller                     #"
+echo "#                       GLUON auf Futro Sxxx Autoinstaller                     #"
 echo "#                                                                              #"
 echo "################################################################################"
 echo
 echo
 
-mount /dev/sdb1
+mount /dev/sdb1 || mount /dev/sdc1
 if [ $? != "0" ]; then
   echo Fehler: Kann USB-Partition mit Gluon-Image-Datei nicht einbinden!
   echo Abbruch!
@@ -50,16 +50,18 @@ else
 fi
 echo
 
-cd /mnt/sdb1
+cd /mnt/sdb1 || cd /mnt/sdc1
 
 /bin/sh bitte_nicht_loeschen.sh
 
 if [ $? != "0" ]; then
   cd
-  sudo umount /mnt/sdb1
+  sudo umount /mnt/sdb1 ||:
+  sudo umount /mnt/sdc1 ||:
   Sirene
 else
-  sudo umount /mnt/sdb1
+  sudo umount /mnt/sdb1 ||:
+  sudo umount /mnt/sdc1 ||:
 fi
 
 sudo poweroff
